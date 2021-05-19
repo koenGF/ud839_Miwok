@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="88dp"
     android:orientation="horizontal">
 
     <ImageView
@@ -13,6 +13,9 @@
         android:background="@drawable/color_white"/>
 
     <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/image_view"
         android:id="@+id/text_background"
         android:layout_width="match_parent"
         android:layout_height="88dp"
@@ -31,7 +34,7 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/default_text_view"
@@ -45,4 +48,12 @@
 
     </LinearLayout>
 
-</LinearLayout>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@mipmap/baseline_play_arrow_white_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp" />
+
+</RelativeLayout>
